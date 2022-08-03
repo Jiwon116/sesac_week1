@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/grid_top_ly"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/grid_back_iv"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/grid_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="120dp"
+            android:text="GridLayout"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/grid_sv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/grid_top_ly"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <GridLayout
+            android:id="@+id/grid_gy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="5"
+            android:columnCount="2">
+
+            <TextView
+                android:id="@+id/grid_tv_1"
+                android:layout_columnWeight="1"
+                android:layout_height="200dp"
+                android:layout_gravity="fill"
+                android:gravity="center"
+                android:background="#F44336"
+                android:text="1st"
+                android:textSize="32sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/grid_tv_2"
+                android:layout_columnWeight="1"
+                android:layout_height="200dp"
+                android:layout_gravity="fill"
+                android:gravity="center"
+                android:background="#E91E63"
+                android:text="2nd"
+                android:textSize="32sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/grid_tv_3"
+                android:layout_columnWeight="1"
+                android:layout_height="200dp"
+                android:layout_gravity="fill"
+                android:gravity="center"
+                android:background="#9C27B0"
+                android:text="3rd"
+                android:textSize="32sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/grid_tv_4"
+                android:layout_columnWeight="1"
+                android:layout_height="200dp"
+                android:layout_gravity="fill"
+                android:gravity="center"
+                android:background="#673AB7"
+                android:text="4th"
+                android:textSize="32sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/grid_tv_5"
+                android:layout_columnWeight="1"
+                android:layout_height="200dp"
+                android:layout_gravity="fill"
+                android:gravity="center"
+                android:background="#3F51B5"
+                android:text="5th"
+                android:textSize="32sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/grid_tv_6"
+                android:layout_columnWeight="1"
+                android:layout_height="200dp"
+                android:layout_gravity="fill"
+                android:gravity="center"
+                android:background="#2196F3"
+                android:text="6th"
+                android:textSize="32sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/grid_tv_7"
+                android:layout_columnWeight="1"
+                android:layout_height="200dp"
+                android:layout_gravity="fill"
+                android:gravity="center"
+                android:background="#00BCD4"
+                android:text="7th"
+                android:textSize="32sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/grid_tv_8"
+                android:layout_columnWeight="1"
+                android:layout_height="200dp"
+                android:layout_gravity="fill"
+                android:gravity="center"
+                android:background="#4CAF50"
+                android:text="8th"
+                android:textSize="32sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/grid_tv_9"
+                android:layout_columnWeight="1"
+                android:layout_height="200dp"
+                android:layout_gravity="fill"
+                android:gravity="center"
+                android:background="#FFC107"
+                android:text="9th"
+                android:textSize="32sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/grid_tv_10"
+                android:layout_columnWeight="1"
+                android:layout_height="200dp"
+                android:layout_gravity="fill"
+                android:gravity="center"
+                android:background="#FF9800"
+                android:text="10th"
+                android:textSize="32sp"
+                android:textColor="@color/white" />
+
+
+        </GridLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
